@@ -1,0 +1,84 @@
+::ng-deep.detail-widget-card .mat-card-header-text{
+    width: 100%;
+    margin: 0;
+}
+::ng-deep.detail-widget-card .mat-card-header-text .mat-card-title{
+    margin-bottom: 7px;
+}
+::ng-deep.detail-widget-card .mat-card-actions{
+    height: 47px;
+    margin-right: 50px;
+    margin-bottom: 0px !important;
+    padding: 0px !important;
+    margin-left: 50px !important;
+}
+::ng-deep.detail-widget-card .mat-card-content{
+    height: 350px ;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.detail-widget{
+    top: 10px;
+    height: 420px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 6px #00000008;
+    border: 1px solid #E5E5E5;
+    border-radius: 6px;
+    opacity: 1;
+    padding: 0 !important;
+    margin-bottom: 25px;
+}
+.detail-widget-header{
+    height: 51px;
+    border-bottom:1px solid #E5E5E5;
+    opacity: 1;;
+}
+.detail-widget-header-controls{
+    width: 100%;
+    margin-top: 13.5px;
+}
+.detail-widget-title{
+    text-align: left;
+    font: normal normal bold 16px/22px Open Sans;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 0.7;
+    margin-left: 24px;
+}
+.blank-widget{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 320px;
+}
+.example-card {
+    margin: 10px;
+    max-width: 270px;
+    box-shadow: 1px 1px 1px -1px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 14%), 4px 3px 4px 0px rgb(0 0 0 / 12%) !important ;
+}
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}
+.category-title{
+    text-align: left;
+    font: normal normal 600 14px/17px Open Sans;
+    letter-spacing: 0px;
+    color: #9a9a9a;
+    text-transform: capitalize;
+    opacity: 1;
+}
+.no-data-found{
+    display: flex;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px !important;
+}
+.no-data-found-text{
+    text-align: left;
+    font: normal normal bold 13px/22px Open Sans;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 0.5;
+}

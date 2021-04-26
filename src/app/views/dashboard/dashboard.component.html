@@ -1,0 +1,5 @@
+<div class="container-fluid set-width mt-4">
+    <app-header></app-header>
+    <app-category-type (getChipData)="getChipData($event)" [completeData]="completeData"></app-category-type>
+    <app-category-detail [categoryDetail]="categoryDetail"></app-category-detail>
+</div>

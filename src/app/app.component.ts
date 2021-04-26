@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'zigramTest';
+  public breadcumData = [
+    { name: 'Home', url: '/', active: true, location: null, branch: null }];
 }

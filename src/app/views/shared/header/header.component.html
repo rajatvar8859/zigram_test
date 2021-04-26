@@ -1,0 +1,32 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 sc-mgb-22">
+            <span class="float-right">
+                <input [attr.disabled]="(selectedCategory =='Select Category') ? true : null"
+                    [placeholder]="getPlaceholder" type="search" [matAutocomplete]="auto" [formControl]="search"
+                    class="form-control input-search">
+                <mat-autocomplete #auto="matAutocomplete">
+                    <ng-container *ngIf="selectedItem?.key=='ingredients'">
+                        <mat-option *ngFor="let data of searchData$ | async" [value]="data?.idIngredient">
+                            <span class="serchDataClass">{{data?.strIngredient}}</span>
+                        </mat-option>
+                    </ng-container>
+                    <ng-container *ngIf="selectedItem?.key=='drinks'">
+                        <mat-option *ngFor="let data of searchData$ | async" [value]="data?.idDrink">
+                            <span class="serchDataClass">{{data?.strDrink}}</span>
+                        </mat-option>
+                    </ng-container>
+                </mat-autocomplete>
+            </span>
+            <div class="float-right">
+                <button [matMenuTriggerFor]="basic" class="sc-currency-btn sc-currency-btn-height">
+                    <span class="currencyText">{{selectedCategory}}</span>
+                </button>
+                <mat-menu #basic="matMenu" yPosition="below" xPosition="after">
+                    <button (click)="selectCategory(item)" *ngFor="let item of category"
+                        mat-menu-item>{{item?.name}}</button>
+                </mat-menu>
+            </div>
+        </div>
+    </div>
+</div>

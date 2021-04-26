@@ -1,0 +1,26 @@
+<mat-card class="detail-widget-card detail-widget">
+    <mat-card-header class="detail-widget-header">
+        <mat-card-title>
+            <div class="detail-widget-header-controls">
+                <span class="detail-widget-title">Category Detail</span>
+            </div>
+        </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <ng-container *ngIf="categoryDetail">
+            <div style="padding: 20px;" class="row ">
+                <div style="display: flex;flex-wrap: wrap">
+                    <mat-card *ngFor="let data of categoryDetail" class="example-card">
+                        <mat-card-header>
+                            <mat-card-title class="category-title">{{data?.strDrink}}</mat-card-title>
+                        </mat-card-header>
+                        <img mat-card-image [src]="data?.strDrinkThumb" [alt]="data?.strDrink">
+                    </mat-card>
+                </div>
+            </div>
+        </ng-container>
+        <div *ngIf="!categoryDetail" class="no-data-found">
+            <span class="no-data-found-text">No Data Found Please select any catorry !</span>
+        </div>
+    </mat-card-content>
+</mat-card>

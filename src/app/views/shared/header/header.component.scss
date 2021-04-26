@@ -1,0 +1,76 @@
+.sc-currency-btn-height{
+    height: 32px;
+    margin-right: 16px;
+    width: 150px;
+}
+.sc-currency-btn {
+    color: #E64552;
+    border-radius: 4px;
+    border: 1px solid #E64552;
+    outline: none
+}
+.currencyText {
+    text-align: left;
+    font: normal normal 600 14px/19px Open Sans;
+    letter-spacing: 0px;
+    color: #E64552;
+    opacity: 1;
+    padding: 9px;
+}
+::ng-deep .mat-menu-content {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  .mat-menu-item {
+    line-height: 35px !important;
+    height: 30px !important;
+    outline: none;
+    text-align: left;
+    font: normal normal normal 13px/18px Open Sans;
+    letter-spacing: 0px;
+    color: #050505;
+    opacity: 1;
+  }
+  ::ng-deep .mat-menu-panel{
+    min-width: 156px !important;  
+    margin-top: 2px;
+    margin-left: -2px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 8px #00000024;
+    border: 1px solid #D2D2D2;
+    border-radius: 6px;
+    opacity: 1;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .input-search{
+    height: 32px;
+    width: 250px;
+    text-align: center;
+    font: normal normal 600 13px/19px Open Sans;
+    letter-spacing: 0px;
+    opacity: 1;
+  }
+  .serchDataClass{
+    line-height: 35px !important;
+    height: 30px !important;
+    outline: none;
+    text-align: left;
+    font: normal normal normal 13px/18px Open Sans;
+    letter-spacing: 0px;
+    color: #050505;
+    opacity: 1;
+  }
+  ::ng-deep .mat-autocomplete-panel{
+    min-width: 151px !important;
+    background: #FFFFFF 0% 0% no-repeat padding-box !important;
+    box-shadow: 0px 4px 8px #00000024 !important;
+    border: 1px solid #D2D2D2 !important;
+    border-radius: 6px !important;
+    width: 252px !important;
+    height: 200px !important;
+  }
+  ::ng-deep .mat-option{
+    line-height: 40px !important;
+    height: 40px !important;
+  }

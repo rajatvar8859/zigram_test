@@ -1,0 +1,23 @@
+<mat-card class="widget-card widget">
+    <mat-card-header class="widget-header">
+        <mat-card-title>
+            <div class="widget-header-controls">
+                <span class="widget-title">Types of Category</span>
+            </div>
+        </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <ng-container *ngFor="let data of completeData">
+            <div class="row category-container">
+                <div class="col-md-12 category-type">{{data?.name}}</div>
+                <div class="col d-flex">
+                    <mat-chip-list aria-label="Fish selection">
+                        <mat-chip #chip="matChip" class="cursor-pointer" (click)='chipSelected(chip,data?.categoryKey)' *ngFor="let item of data?.drinks">
+                            {{item[data?.categoryKey]}}
+                        </mat-chip>
+                    </mat-chip-list>
+                </div>
+            </div>
+        </ng-container>
+    </mat-card-content>
+</mat-card>
